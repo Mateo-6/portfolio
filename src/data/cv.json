@@ -17,55 +17,161 @@
       "to": "2018",
       "bachelor": "Bachelor of Science in Information Technology",
       "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
-    },
-    {
-      "from": "2020",
-      "to": "2023",
-      "bachelor": "Bachelor of Engineering in Systems Engineering",
-      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
-    },
-    {
-      "from": "2015",
-      "to": "2018",
-      "bachelor": "Bachelor of Science in Information Technology",
-      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
-    },
-    {
-      "from": "2020",
-      "to": "2023",
-      "bachelor": "Bachelor of Engineering in Systems Engineering",
-      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
-    },
-    {
-      "from": "2015",
-      "to": "2018",
-      "bachelor": "Bachelor of Science in Information Technology",
-      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
-    },
-    {
-      "from": "2020",
-      "to": "2023",
-      "bachelor": "Bachelor of Engineering in Systems Engineering",
-      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
-    },
-    {
-      "from": "2015",
-      "to": "2018",
-      "bachelor": "Bachelor of Science in Information Technology",
-      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
-    },
-    {
-      "from": "2020",
-      "to": "2023",
-      "bachelor": "Bachelor of Engineering in Systems Engineering",
-      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
-    },
-    {
-      "from": "2015",
-      "to": "2018",
-      "bachelor": "Bachelor of Science in Information Technology",
-      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
     }
-
+  ],
+  "experience": [
+    {
+      "company": "VOV Solutions SA",
+      "rol": "Software Engineer II",
+      "from": "Nov 2021",
+      "to": "Feb 2024",
+      "projects": [
+        {
+          "projectName": "Spreso",
+          "from": "2024",
+          "to": "2024",
+          "description": "Development a company dashboard to manage the internal operations.",
+          "tasks": [
+            "Development new features to increase functionalities of the dashboard. Using React and TypeScript.",
+            "Use GraphQL to connect client and Backend.",
+            "Development of custom end points to make specific features."
+          ],
+          "technologies": [
+            "JavaScript",
+            "GraphQL",
+            "MongoDB",
+            "React",
+            "Typescript",
+            "Express"
+          ]
+        },
+        {
+          "projectName": "Croissant",
+          "from": "2023",
+          "to": "2023",
+          "description": "Integration of the Google search engine API as a search engine to obtain images according to defined parameters.",
+          "tasks": [
+            "Development of lambda function using AWS CDK and Typescript"
+          ],
+          "technologies": [
+            "JavaScript",
+            "Typescript",
+            "Python",
+            "AWS CDK"
+          ]
+        },
+        {
+          "projectName": "Spreso",
+          "from": "2023",
+          "to": "2023",
+          "description": "Development a company dashboard to manage the internal operations.",
+          "tasks": [
+            "Development new features to increase functionalities of the dashboard. Using React and TypeScript.",
+            "Use GraphQL to connect client and Backend.",
+            "Development of custom end points to make specific features."
+          ],
+          "technologies": [
+            "JavaScript",
+            "GraphQL",
+            "MongoDB",
+            "React",
+            "Typescript",
+            "Express"
+          ]
+        },
+        {
+          "projectName": "Swaypay",
+          "from": "2021",
+          "to": "2023",
+          "description": "Development a Gmail parser integration to extract and collect information from user emails.",
+          "tasks": [
+            "Development of Google extension using React and TypeScript.",
+            "API development in Node.JS using Express.",
+            "Maintenance of AWS lambda function."
+          ],
+          "technologies": [
+            "JavaScript",
+            "Typescript",
+            "React",
+            "PostgreSQL",
+            "AWS"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "MONIHUB SA",
+      "rol": "Full Stack Developer",
+      "from": "Sep 2019",
+      "to": "Jun 2021",
+      "projects": [
+        {
+          "projectName": "Monihub",
+          "from": "2019",
+          "to": "2021",
+          "description": "Created an Angular app and Symphony framework to facilitate and improve the operation of financial entities.",
+          "tasks": [
+            "Developed the Frontend application with Angular.",
+            "Created a Web API with Symphony to serve the Angular App.",
+            "Integrated the backend with PostgreSQL."
+          ],
+          "technologies": [
+            "JavaScript",
+            "PHP",
+            "PostgreSQL",
+            "Angular",
+            "Typescript"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Fundación Universitaria Catolica Lumen Gentium",
+      "rol": "Web Developer",
+      "from": "Oct 2017",
+      "to": "Sep 2019",
+      "projects": [
+        {
+          "projectName": "SIA",
+          "from": "2017",
+          "to": "2018",
+          "description": "Created Egresados app to gather information of graduates.",
+          "tasks": [
+            "Requirements analysis.",
+            "Design of the DB.",
+            "Developed the app with Laravel.",
+            "Integrated the app with MySQL DB.",
+            "Performed tests in the app."
+          ],
+          "technologies": [
+            "JavaScript",
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "JQuery"
+          ]
+        },
+        {
+          "projectName": "SIA",
+          "from": "2018",
+          "to": "2019",
+          "description": "Created Secretaria General app to gather information of degree applications.",
+          "tasks": [
+            "Requirements analysis.",
+            "Design of the DB.",
+            "Developed the app with Laravel.",
+            "Integrated the app with MySQL database.",
+            "Performed tests in the app."
+          ],
+          "technologies": [
+            "JavaScript",
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "JQuery"
+          ]
+        }
+      ]
+    }
   ]
 }

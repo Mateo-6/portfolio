@@ -1,6 +1,19 @@
 import React from "react";
 
-export function ExperienceSection() {
+// Component
+import { ExperienceCard } from "../../component/experienceCard";
+
+// Type
+import { IExperienceData } from "../../../type/global";
+
+interface IProps {
+  experience: IExperienceData[];
+}
+
+
+export function ExperienceSection(props: IProps) {
+  const { experience } = props;
+
   return (
     <section
       id="experience"
@@ -11,9 +24,11 @@ export function ExperienceSection() {
           Experience
         </h2>
       </div>
-      <div>
-        <p className="mb-4">Experience</p>
-      </div>
+      {experience.map((e, i) => (
+        <div key={i}>
+          <ExperienceCard experience={e} />
+        </div>
+      ))}
     </section>
   );
 }
