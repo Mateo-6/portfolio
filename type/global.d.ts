@@ -1,11 +1,20 @@
-export interface Data {
-  about: AboutData;
+type TSection = "about" | "education" | "experience";
+
+export interface IData {
+  about: IAboutData;
+  education: IEducationData[];
 }
 
-interface AboutData {
+interface IAboutData {
   description: string;
   email: string;
   github: string;
   linkendIn: string;
 }
 
+interface IEducationData {
+  from: string;
+  to: string;
+  bachelor: string;
+  description: string;
+}

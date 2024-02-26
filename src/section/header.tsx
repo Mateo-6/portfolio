@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+
+// Type
+import { TSection } from "../../type/global";
 
 interface IProps {
   linkedIn: string;
   github: string;
+  description: string;
+  section: TSection;
+  onToggleClick: (section: TSection) => void;
 }
 
 export function HeaderComponent(props: IProps) {
-  const { linkedIn, github } = props;
+  const { linkedIn, github, description, section, onToggleClick } = props;
 
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
           {"<Mateo Arango />"}
@@ -17,27 +23,43 @@ export function HeaderComponent(props: IProps) {
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-800 sm:text-xl">
           Full Stack software Engineer
         </h2>
+        {/* <p className="mt-4 max-w-xs leading-normal">{description}</p> */}
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
             <li>
-              <a className="group flex items-center py-3 cursor-pointer">
-                <span className="mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
+              <a
+                className={`group flex items-center py-3 cursor-pointer ${
+                  section === "about" ? "active" : ""
+                }`}
+                onClick={() => onToggleClick("about")}
+              >
+                <span className="nav-line mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   About
                 </span>
               </a>
             </li>
             <li>
-              <a className="group flex items-center py-3 cursor-pointer">
-                <span className="nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
+              <a
+                className={`group flex items-center py-3 cursor-pointer ${
+                  section === "education" ? "active" : ""
+                }`}
+                onClick={() => onToggleClick("education")}
+              >
+                <span className="nav-line nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   Education
                 </span>
               </a>
             </li>
             <li>
-              <a className="group flex items-center py-3 cursor-pointer">
-                <span className="nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
+              <a
+                className={`group flex items-center py-3 cursor-pointer ${
+                  section === "experience" ? "active" : ""
+                }`}
+                onClick={() => onToggleClick("experience")}
+              >
+                <span className="nav-line nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   Experience
                 </span>

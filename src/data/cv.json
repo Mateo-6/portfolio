@@ -4,5 +4,68 @@
     "email": "mateoarango05@gmail.com",
     "github": "https://github.com/Mateo-6",
     "linkendIn": "https://www.linkedin.com/in/mateo-arango-buitrago-053663174"
-  }
+  },
+  "education": [
+    {
+      "from": "2020",
+      "to": "2023",
+      "bachelor": "Bachelor of Engineering in Systems Engineering",
+      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+    },
+    {
+      "from": "2015",
+      "to": "2018",
+      "bachelor": "Bachelor of Science in Information Technology",
+      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+    },
+    {
+      "from": "2020",
+      "to": "2023",
+      "bachelor": "Bachelor of Engineering in Systems Engineering",
+      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+    },
+    {
+      "from": "2015",
+      "to": "2018",
+      "bachelor": "Bachelor of Science in Information Technology",
+      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+    },
+    {
+      "from": "2020",
+      "to": "2023",
+      "bachelor": "Bachelor of Engineering in Systems Engineering",
+      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+    },
+    {
+      "from": "2015",
+      "to": "2018",
+      "bachelor": "Bachelor of Science in Information Technology",
+      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+    },
+    {
+      "from": "2020",
+      "to": "2023",
+      "bachelor": "Bachelor of Engineering in Systems Engineering",
+      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+    },
+    {
+      "from": "2015",
+      "to": "2018",
+      "bachelor": "Bachelor of Science in Information Technology",
+      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+    },
+    {
+      "from": "2020",
+      "to": "2023",
+      "bachelor": "Bachelor of Engineering in Systems Engineering",
+      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+    },
+    {
+      "from": "2015",
+      "to": "2018",
+      "bachelor": "Bachelor of Science in Information Technology",
+      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+    }
+
+  ]
 }
