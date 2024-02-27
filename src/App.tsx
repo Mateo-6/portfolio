@@ -32,7 +32,7 @@ function App() {
   };
 
   function showSpanJoke() {
-    localStorage.setItem("joke", "false");
+    localStorage.setItem("joke", "true");
 
     const delayedElement = document.getElementById(
       "delayedElement"

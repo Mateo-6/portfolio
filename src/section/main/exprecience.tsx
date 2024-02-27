@@ -25,7 +25,7 @@ export function ExperienceSection(props: IProps) {
         </h2>
       </div>
       {experience.map((e, i) => (
-        <div key={i}>
+        <div key={i} className="md:flex justify-center">
           <ExperienceCard experience={e} />
         </div>
       ))}
