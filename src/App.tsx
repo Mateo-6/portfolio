@@ -16,7 +16,7 @@ import {
   IEducationData,
   IExperienceData,
   TSection,
-} from "../type/global";
+} from "./type/global";
 
 function App() {
   const data = dataJson as unknown as IData;
@@ -48,7 +48,7 @@ function App() {
     joke.classList.add("hidden");
   }
 
-  if(!joke) {
+  if (!joke) {
     setTimeout(showSpanJoke, 2000);
     setTimeout(displayMainContent, 4000);
   }
@@ -65,9 +65,7 @@ function App() {
     } else {
       switch (section) {
         case "about":
-          return (
-            <AboutSection description={about.description} section={section} />
-          );
+          return <AboutSection description={about.description} section={section} />;
         case "education":
           return <EducationSection education={education} />;
         case "experience":
@@ -80,7 +78,7 @@ function App() {
     <>
       <div
         id="mainContent"
-        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 ${(!joke) ? "hidden animate-fadeIn": ""}`}
+        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 ${(!joke) ? "hidden animate-fadeIn" : ""}`}
       >
         <div className="">
           <div className="lg:flex lg:justify-between lg:gap-4 h-full">

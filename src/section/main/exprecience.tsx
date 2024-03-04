@@ -4,7 +4,7 @@ import React from "react";
 import { ExperienceCard } from "../../component/experienceCard";
 
 // Type
-import { IExperienceData } from "../../../type/global";
+import { IExperienceData } from "./../../type/global";
 
 interface IProps {
   experience: IExperienceData[];

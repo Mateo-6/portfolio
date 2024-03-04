@@ -1,7 +1,7 @@
 import React from "react";
 
 // Type
-import { IEducationData } from "../../type/global";
+import { IEducationData } from "./../type/global";
 
 interface IProps {
   education: IEducationData;

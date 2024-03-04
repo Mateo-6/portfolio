@@ -4,7 +4,7 @@ import React from "react";
 import { TecnologiesCard } from "./technologiesLabel";
 
 // Type
-import { IExperienceData } from "../../type/global";
+import { IExperienceData } from "./../type/global";
 
 interface IProps {
   experience: IExperienceData;

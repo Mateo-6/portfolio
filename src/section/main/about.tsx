@@ -1,7 +1,7 @@
 import React from "react";
 
 // Type
-import { TSection } from "../../../type/global";
+import { TSection } from "./../../type/global";
 
 interface IProps {
   description: string;
