@@ -78,8 +78,7 @@ function App() {
     <>
       <div
         id="mainContent"
-        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 ${(!joke) ? "hidden animate-fadeIn" : ""}`}
-      >
+        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 ${(!joke) ? "hidden animate-fadeIn" : ""}`}>
         <div className="">
           <div className="lg:flex lg:justify-between lg:gap-4 h-full">
             <HeaderComponent

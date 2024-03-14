@@ -28,9 +28,9 @@ export function HeaderComponent(props: IProps) {
           <ul className="mt-16 w-max">
             <li>
               <a
-                className={`group flex items-center py-3 cursor-pointer ${
-                  section === "about" ? "active" : ""
-                }`}
+                data-testid="about"
+                className={`group flex items-center py-3 cursor-pointer ${section === "about" ? "active" : ""
+                  }`}
                 onClick={() => onToggleClick("about")}
               >
                 <span className="nav-line mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
@@ -41,9 +41,9 @@ export function HeaderComponent(props: IProps) {
             </li>
             <li>
               <a
-                className={`group flex items-center py-3 cursor-pointer ${
-                  section === "education" ? "active" : ""
-                }`}
+                data-testid="education"
+                className={`group flex items-center py-3 cursor-pointer ${section === "education" ? "active" : ""
+                  }`}
                 onClick={() => onToggleClick("education")}
               >
                 <span className="nav-line nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
@@ -54,9 +54,9 @@ export function HeaderComponent(props: IProps) {
             </li>
             <li>
               <a
-                className={`group flex items-center py-3 cursor-pointer ${
-                  section === "experience" ? "active" : ""
-                }`}
+                data-testid="experience"
+                className={`group flex items-center py-3 cursor-pointer ${section === "experience" ? "active" : ""
+                  }`}
                 onClick={() => onToggleClick("experience")}
               >
                 <span className="nav-line nav-indicator mr-4 h-px w-0 bg-slate-600 transition-all group-hover:w-10 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800 motion-reduce:transition-none"></span>
