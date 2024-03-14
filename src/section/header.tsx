@@ -27,7 +27,7 @@ export function HeaderComponent(props: IProps) {
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
             <li>
-              <a
+              <span
                 data-testid="about"
                 className={`group flex items-center py-3 cursor-pointer ${section === "about" ? "active" : ""
                   }`}
@@ -37,10 +37,10 @@ export function HeaderComponent(props: IProps) {
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   About
                 </span>
-              </a>
+              </span>
             </li>
             <li>
-              <a
+              <span
                 data-testid="education"
                 className={`group flex items-center py-3 cursor-pointer ${section === "education" ? "active" : ""
                   }`}
@@ -50,10 +50,10 @@ export function HeaderComponent(props: IProps) {
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   Education
                 </span>
-              </a>
+              </span>
             </li>
             <li>
-              <a
+              <span
                 data-testid="experience"
                 className={`group flex items-center py-3 cursor-pointer ${section === "experience" ? "active" : ""
                   }`}
@@ -63,7 +63,7 @@ export function HeaderComponent(props: IProps) {
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-800 group-focus-visible:text-slate-800">
                   Experience
                 </span>
-              </a>
+              </span>
             </li>
           </ul>
         </nav>
