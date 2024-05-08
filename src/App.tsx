@@ -49,8 +49,8 @@ function App() {
   }
 
   if (!joke) {
-    setTimeout(showSpanJoke, 2000);
-    setTimeout(displayMainContent, 4000);
+    setTimeout(showSpanJoke, 1000);
+    setTimeout(displayMainContent, 3000);
   }
 
   const buildMainContent = () => {

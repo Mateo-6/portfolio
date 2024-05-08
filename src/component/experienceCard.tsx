@@ -25,7 +25,7 @@ export function ExperienceCard(props: IProps) {
           </p>
         </div>
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-900 mt-10">
-          Projects
+          Responsibilities
         </h5>
         {projects.map((e, i) => (
           <div className="flex flex-row" key={i}>
