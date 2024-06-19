@@ -23,7 +23,7 @@ function App() {
   const { about }: { about: IAboutData } = data;
   const { education }: { education: IEducationData[] } = data;
   const { experience }: { experience: IExperienceData[] } = data;
-  const joke = Boolean(localStorage.getItem("joke")) || false;
+  let joke = Boolean(localStorage.getItem("joke")) || false;
 
   const [section, setSection] = useState<TSection>("about");
 
@@ -48,10 +48,12 @@ function App() {
     joke.classList.add("hidden");
   }
 
-  if (!joke) {
+  /* if (!joke) {
     setTimeout(showSpanJoke, 1000);
     setTimeout(displayMainContent, 3000);
-  }
+  } */
+
+  joke = true
 
   const buildMainContent = () => {
     if (window.innerWidth <= 1024) {
