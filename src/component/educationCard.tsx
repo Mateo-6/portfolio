@@ -1,28 +1,28 @@
 import React from "react";
 
 // Type
-import { IEducationData } from "./../type/global";
+import { ISchool } from "./../type/global";
 
 interface IProps {
-  education: IEducationData;
+  school: ISchool;
 }
 
 export function EducationCard(props: IProps) {
-  const { education } = props;
+  const { school } = props;
 
   return (
-    <div className="flex flex-col rounded-lg md:flex-row md:max-w-xl">
-      <div className="flex-auto w-40 pt-4 font-bold">
+    <div className="flex flex-col rounded-lg md:flex-row md:max-w-xl shadow shadow-slate-900 mb-5 px-4">
+      <div className="flex-auto w-40 pt-4">
         <p>
-          {education.from} - {education.to}
+          {school.from} - {school.to}
         </p>
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal flex-auto w-auto">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-900 ">
-          {education.bachelor}
+        <h5 className="mb-2 text-2xl font-bold tracking-tight">
+          {school.bachelor}
         </h5>
-        <p className="mb-3 font-normal text-slate-700 dark:text-slate-400">
-          {education.description}
+        <p className="mb-3 font-normal dark:text-neutral-300">
+          {school.description}
         </p>
       </div>
     </div>

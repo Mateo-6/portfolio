@@ -2,7 +2,7 @@ type TSection = "about" | "education" | "experience";
 
 export interface IData {
   about: IAboutData;
-  education: IEducationData[];
+  education: IEducationData;
   experience: IExperienceData[];
 }
 
@@ -11,9 +11,22 @@ interface IAboutData {
   email: string;
   github: string;
   linkendIn: string;
+  available: true;
 }
 
 interface IEducationData {
+  school: ISchool[];
+  certificates: ICertificate[];
+}
+
+interface ICertificate {
+  name: string;
+  company: string;
+  url: string;
+  img: string;
+}
+
+interface ISchool {
   from: string;
   to: string;
   bachelor: string;
@@ -33,6 +46,6 @@ interface IProjects {
   from: string;
   to: string;
   description: string;
-  tasks: string[],
+  tasks: string[];
   technologies: string[];
 }

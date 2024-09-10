@@ -2,12 +2,13 @@ import React from "react";
 
 // Component
 import { EducationCard } from "../../component/educationCard";
+import { CertificateCard } from "../../component/certificationCard";
 
 // Education
 import { IEducationData } from "./../../type/global";
 
 interface IProps {
-  education: IEducationData[];
+  education: IEducationData;
 }
 
 export function EducationSection(props: IProps) {
@@ -18,14 +19,24 @@ export function EducationSection(props: IProps) {
       id="education"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
     >
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-100/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-800 lg:sr-only">
-          Education 2020
+      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-lg font-bold uppercase tracking-widest text-white lg:sr-only">
+          Education
         </h2>
       </div>
-      {education.map((e, i) => (
+      {education.school.map((e, i) => (
         <div key={i}>
-          <EducationCard education={e} />
+          <EducationCard school={e} />
+        </div>
+      ))}
+      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12">
+        <h2 className="text-lg font-bold uppercase tracking-widest text-white">
+          Certificates
+        </h2>
+      </div>
+      {education.certificates.map((e, i) => (
+        <div key={i}>
+          <CertificateCard certificate={e} />
         </div>
       ))}
     </section>

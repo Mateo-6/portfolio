@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Section
 import { HeaderComponent } from "./section/header";
@@ -23,40 +23,24 @@ function App() {
   const { about }: { about: IAboutData } = data;
   const { education }: { education: IEducationData[] } = data;
   const { experience }: { experience: IExperienceData[] } = data;
-  let joke = Boolean(localStorage.getItem("joke")) || false;
 
   const [section, setSection] = useState<TSection>("about");
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   const onToggleClick = (section: TSection) => {
     setSection(section);
   };
 
-  function showSpanJoke() {
-    localStorage.setItem("joke", "true");
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-    const delayedElement = document.getElementById(
-      "delayedElement"
-    ) as HTMLElement;
-    delayedElement.classList.remove("hidden");
-  }
-
-  function displayMainContent() {
-    const mainContent = document.getElementById("mainContent") as HTMLElement;
-    mainContent.classList.remove("hidden");
-
-    const joke = document.getElementById("joke") as HTMLElement;
-    joke.classList.add("hidden");
-  }
-
-  /* if (!joke) {
-    setTimeout(showSpanJoke, 1000);
-    setTimeout(displayMainContent, 3000);
-  } */
-
-  joke = true
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   const buildMainContent = () => {
-    if (window.innerWidth <= 1024) {
+    if (windowWidth <= 1024) {
       return (
         <>
           <AboutSection description={about.description} section={section} />
@@ -67,7 +51,9 @@ function App() {
     } else {
       switch (section) {
         case "about":
-          return <AboutSection description={about.description} section={section} />;
+          return (
+            <AboutSection description={about.description} section={section} />
+          );
         case "education":
           return <EducationSection education={education} />;
         case "experience":
@@ -80,10 +66,13 @@ function App() {
     <>
       <div
         id="mainContent"
-        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 ${(!joke) ? "hidden animate-fadeIn" : ""}`}>
+        className={`mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-mono md:px-12 md:py-20 lg:px-24 lg:py-0 dark:text-white`}
+      >
         <div className="">
           <div className="lg:flex lg:justify-between lg:gap-4 h-full">
             <HeaderComponent
+              email={about.email}
+              available={about.available}
               github={about.github}
               linkedIn={about.linkendIn}
               description={about.description}
@@ -94,27 +83,27 @@ function App() {
               {buildMainContent()}
             </main>
           </div>
-          <footer className="fixed bottom-0 left-0 z-20 w-full p-4 text-center backdrop-blur bg-slate-100/75">
-            <span className="text-sm text-slate-500 sm:text-center">
-              Built with{" "}
+          <footer className="fixed bottom-0 left-0 z-20 w-full p-4 text-center backdrop-blur">
+            <span className="text-sm dark:text-white sm:text-center">
+              <strong>Built with</strong>{" "}
               <a
-                className="font-bold text-slate-700"
+                className="text-neutral-300"
                 href="https://react.com/"
                 target="_blank"
               >
-                React(TS)
+                ReactJS(TS)
               </a>{" "}
-              &{" "}
+              <strong>&</strong>{" "}
               <a
-                className="font-bold text-slate-700"
+                className="text-neutral-300"
                 href="https://tailwindcss.com/"
                 target="_blank"
               >
                 Tailwind
               </a>
-              . Coded in{" "}
+              <strong>. Coded in</strong>{" "}
               <a
-                className="font-bold text-slate-700"
+                className="text-neutral-300"
                 href="https://code.visualstudio.com/"
                 target="_blank"
               >
@@ -124,22 +113,6 @@ function App() {
           </footer>
         </div>
       </div>
-      {!joke && (
-        <div
-          id="joke"
-          className="flex flex-col justify-center items-center min-h-screen"
-        >
-          <span className="font-bold sm:text-5xl lg:text-6xl">
-            404 PAGE NOT FOUND
-          </span>
-          <span
-            id="delayedElement"
-            className="hidden animate-fadeIn lg:text-2xl"
-          >
-            Wait I'am Joking :D
-          </span>
-        </div>
-      )}
     </>
   );
 }

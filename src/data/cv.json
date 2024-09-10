@@ -3,22 +3,33 @@
     "description": "Full stack software engineer with Front end experience in React, Angular, Typescript and Backend technologies such as NodeJS, Laravel, GraphQL. Experienced with SQL and noSQL databases. Proficient in 2 languages, Spanish and English, with bachelor’s in computer technology and system engineer.",
     "email": "mateoarango05@gmail.com",
     "github": "https://github.com/Mateo-6",
-    "linkendIn": "https://www.linkedin.com/in/mateo-arango-buitrago-053663174"
+    "linkendIn": "https://www.linkedin.com/in/mateo-arango-buitrago-053663174",
+    "available": true
   },
-  "education": [
-    {
-      "from": "2020",
-      "to": "2023",
-      "bachelor": "Bachelor of Engineering in Systems Engineering",
-      "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
-    },
-    {
-      "from": "2015",
-      "to": "2018",
-      "bachelor": "Bachelor of Science in Information Technology",
-      "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
-    }
-  ],
+  "education": {
+    "school": [
+      {
+        "from": "2020",
+        "to": "2023",
+        "bachelor": "Bachelor of Engineering in Systems Engineering",
+        "description": "Institución Universitaria Antonio Jose Camacho, Cali, Colombia"
+      },
+      {
+        "from": "2015",
+        "to": "2018",
+        "bachelor": "Bachelor of Science in Information Technology",
+        "description": "Fundación universitaria Católica Lumen Gentium, Cali, Colombia"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "AWS Cloud Quest: Cloud Practitioner",
+        "company": "Amazon Web Services (AWS)",
+        "url": "https://www.credly.com/badges/e1cd44b0-f04d-4b6c-baed-7f0564524f8e/public_url",
+        "img": "https://media.licdn.com/dms/image/v2/C560BAQER_QnUTXrPJw/company-logo_200_200/company-logo_200_200/0/1670264051233/amazon_web_services_logo?e=1733961600&v=beta&t=sZrrylMwfmfvJPk0hPuo8CHP_7pPLURDXgFRkzLCvU8"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "VOV Solutions SA",
