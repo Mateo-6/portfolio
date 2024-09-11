@@ -29,7 +29,7 @@ export function EducationSection(props: IProps) {
           <EducationCard school={e} />
         </div>
       ))}
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12">
+      <div className="sticky top-0 z-20 -mx-6 mb-4 px-6 py-5 backdrop-blur md:-mx-12 md:px-12">
         <h2 className="text-lg font-bold uppercase tracking-widest text-white">
           Certificates
         </h2>
