@@ -32,6 +32,68 @@
   },
   "experience": [
     {
+      "company": "Gorilla Logic",
+      "rol": "React & Node.js Engineer",
+      "from": "Dec 2024",
+      "to": "Present",
+      "projects": [
+        {
+          "projectName": "Gorilla Logic",
+          "from": "2024",
+          "to": "Present",
+          "description": "Development and maintenance of web applications as part of multidisciplinary teams, focusing on frontend architecture, performance, and code quality.",
+          "tasks": [
+            "Developed and maintained web apps using React, TypeScript, and Redux following best practices.",
+            "Implemented complex features: infinite scrolling, global state management, and performance optimization.",
+            "Integrated REST APIs with proper error handling and efficient communication.",
+            "Collaborated with cross-functional teams (Backend, QA, UX/UI, PO) in Scrum/Kanban environments.",
+            "Conducted code reviews and reduced technical debt to improve UX and scalability."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Redux",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "MySQL",
+            "PHP",
+            "Laravel",
+            "Redis",
+            "AWS",
+            "Docker",
+            "Microservices"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Zemoga",
+      "rol": "Software Engineer",
+      "from": "Nov 2024",
+      "to": "Dec 2024",
+      "projects": [
+        {
+          "projectName": "Fintech Project",
+          "from": "2024",
+          "to": "2024",
+          "description": "I helped in the development of libraries that contributed to the growth and maintainability of the project.",
+          "tasks": [
+            "Worked in a fintech environment focused on maintenance, development, and deployment tasks.",
+            "Improved existing features, implemented new solutions, and ensured stable and efficient releases to production."
+          ],
+          "technologies": [
+            "JavaScript",
+            "PostgreSQL",
+            "React",
+            "Typescript",
+            "Express"
+          ]
+        }
+      ]
+    },
+    {
       "company": "VOV Solutions SA",
       "rol": "Software Engineer II",
       "from": "Nov 2021",
